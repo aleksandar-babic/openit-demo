@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-openit-demo"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-atzxo9zmuttm"
+s3_prefix = "sam-openit-demo"
+region = "eu-west-1"
+profile = "gdn-lab"
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=254825746541.dkr.ecr.eu-west-1.amazonaws.com/openit", "AddBookFunction=254825746541.dkr.ecr.eu-west-1.amazonaws.com/openit", "ListBooksFunction=254825746541.dkr.ecr.eu-west-1.amazonaws.com/openit"]
